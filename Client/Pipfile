@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+configparser = ">=5.0.1"
+requests = ">=2.24.0"
+simple-term-menu = ">=0.10.3"
+
+[dev-packages]
+pytest = "*"
+"flake8" = "*"
+twine = "*"
+pytest-cov = "*"
+pylint = "*"
+"autopep8" = "*"

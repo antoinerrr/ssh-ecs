@@ -30,6 +30,34 @@ Both this can be easily switch to something more robust like redit and a real da
 
 Follow this: https://www.vaultproject.io/docs/secrets/ssh/one-time-ssh-passwords it will work just fine ;) for allowed cidr put all the cidr for all your env, for default user put `ssh_bastion` change the default ttl to something small, 3 minutes is fine.
 
+### Iam 
+
+We need to have a role attach to the instance running the server with this:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:DescribeInstances",
+                "ecs:ListContainerInstances",
+                "ecs:ListServices",
+                "ecs:ListTasks",
+                "ecs:DescribeTasks",
+                "sts:AssumeRole",
+                "ecs:DescribeServices",
+                "ecs:DescribeContainerInstances",
+                "ecs:ListClusters",
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
 ### EC2 user data 
 (tested only with aws ami for ecs)
 

@@ -3,7 +3,8 @@ name: Lint
 on:
   push:
     paths:
-      - '*.py'
+      - 'Client/sshecs/*.py'
+      - 'Server/*.py'
 
 jobs:
   flake8_py3:

@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = ">=2.24.0"
+flask = ">=1.0.2"
+flask_httpauth = ">=4.1.0"
+boto3 = ">=1.14.26"
+botocore = ">=1.17.31"
+request = ">=2.24.0"
+requests-cache = ">=0.5.2"
+ansicolors = ">=1.1.8"
+hvac = ">=0.10.5"
+tinydb = ">=4.2.0"
+
+[dev-packages]
+pytest = "*"
+"flake8" = "*"
+twine = "*"
+pytest-cov = "*"
+pylint = "*"
+"autopep8" = "*"

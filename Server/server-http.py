@@ -178,7 +178,7 @@ def sendContainers(app, cluster):
         response = client.describe_tasks(
                     cluster=cluster,
                     tasks=[
-                        task.split("/")[1],
+                        task.split("/")[-1],
                     ],
                 )
         containers = list()

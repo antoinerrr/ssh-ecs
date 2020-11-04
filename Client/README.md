@@ -1,12 +1,4 @@
 # SSH-ECS
-
-
-This client is a tool to help to connect to ecs containers
-
-  - Auth using github groups
-  - connect to container direclty
-
-
 ### Installation
 
 sshecs required python3 to run.

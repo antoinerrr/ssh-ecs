@@ -16,3 +16,8 @@ Best is to fork this repo and to distribute the client preconfigured (with the a
 ### Server 
 
 You can find the server documentation [here](https://github.com/antoiner77/ssh-ecs/tree/master/Server#ssh-ecs-server)
+
+
+###### Contributors
+
+[vvanholl](https://github.com/vvanholl/)

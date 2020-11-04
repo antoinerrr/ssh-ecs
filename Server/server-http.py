@@ -152,7 +152,7 @@ def sendTasks(app, cluster):
             return(jsonify({"error": "UNSUPORTED"}))
         response = client.list_tasks(
             cluster=cluster,
-            serviceName=service.split("/")[1],
+            serviceName=service.split("/")[-1],
             desiredStatus='RUNNING'
         )
         if len(response["taskArns"]) == 0:
@@ -200,7 +200,7 @@ def getConnectDetail(app, cluster, task, container):
     response = client.describe_tasks(
                 cluster=cluster,
                 tasks=[
-                    task.split("/")[1],
+                    task.split("/")[-1],
                 ])
     runtimeId = ""
     for cont in response["tasks"][0]["containers"]:

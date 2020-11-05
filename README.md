@@ -1,6 +1,8 @@
 # SSH-ECS
 Simple cli tool to easily connect to any container on any AWS ECS cluster. With Github authentification to manage authorization
 
+/!\ Still not finish, frequent updates
+
 ### Cli preview: 
 
 <details>
